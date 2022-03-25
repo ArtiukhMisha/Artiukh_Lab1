@@ -28,8 +28,8 @@ public class Main {
 
     }
         System.out.println("otvet = "+otv);
+        System.out.println();
     }
-
     /*
     * Найти сумму –12 + 22 – 32 + 42 + ... + 102. Условную инструкцию
     * не использовать.
@@ -43,6 +43,7 @@ public class Main {
         otv = otv + Math.pow(i,2)*b;
     }
         System.out.println("otvet = "+otv);
+        System.out.println();
     }
 
     /*
@@ -60,7 +61,7 @@ public class Main {
             x = i/4.5;
             System.out.println(Math.toDegrees(Math.acos(x)));
         }
-
+        System.out.println();
     }
 
     /*
@@ -84,7 +85,7 @@ public class Main {
          System.out.println("средняя плотность населения по области в целом "
          + otv/n);
 
-
+         System.out.println();
     }
 
     /*
@@ -93,12 +94,22 @@ public class Main {
      */
     private static void task127(){
         System.out.println("task127 ");
+        for (int i = 0; i <10 ; i++) {
+            for (int j = 10-i; j <10 ; j++) {
+                if (i*i+j*j==58){
+                    System.out.println(i+" + "+j);
+                    return;
+                }
 
+            }
+
+        }
+        System.out.println();
     }
     public static void main(String[] args) {
-	//task27();
-    //task52();
-    //task77();
+	task27();
+    task52();
+    task77();
     task102();
     task127();
     }
