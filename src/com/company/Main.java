@@ -69,7 +69,21 @@ public class Main {
     населения по области в целом.
      */
      private static void task102(){
-         System.out.println("task102 ");
+     System.out.println("task102 ");
+     double otv=0;
+     Scanner scanner = new Scanner(System.in);
+        System.out.print("колво районов = ");
+        int n = scanner.nextInt();
+         for (int i = 0; i < n; i++) {
+             System.out.print("колво жителей = ");
+             int hum = scanner.nextInt();
+             System.out.print("площадь = ");
+             int s = scanner.nextInt();
+             otv += (float)(hum / s);
+         }
+         System.out.println("средняя плотность населения по области в целом "
+         + otv/n);
+
 
     }
 
@@ -84,7 +98,7 @@ public class Main {
     public static void main(String[] args) {
 	//task27();
     //task52();
-    task77();
+    //task77();
     task102();
     task127();
     }
