@@ -54,6 +54,12 @@ public class Main {
      */
     private static void task77(){
         System.out.println("task77 ");
+        double x;
+
+        for (double i = 3; i<4.5; i=i+0.2){
+            x = i/4.5;
+            System.out.println(Math.toDegrees(Math.acos(x)));
+        }
 
     }
 
@@ -77,7 +83,7 @@ public class Main {
     }
     public static void main(String[] args) {
 	//task27();
-    task52();
+    //task52();
     task77();
     task102();
     task127();
