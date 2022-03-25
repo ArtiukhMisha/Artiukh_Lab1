@@ -35,9 +35,14 @@ public class Main {
     * не использовать.
      */
     private static void task52(){
-        System.out.println("task52 ");
-
-
+    System.out.println("task52 ");
+    double otv=0;
+    int b = 1;
+    for (byte i = 1;i<11;i++ ){
+        b = -b;
+        otv = otv + Math.pow(i,2)*b;
+    }
+        System.out.println("otvet = "+otv);
     }
 
     /*
@@ -71,7 +76,7 @@ public class Main {
 
     }
     public static void main(String[] args) {
-	task27();
+	//task27();
     task52();
     task77();
     task102();
